@@ -1,0 +1,16 @@
+---
+description: Require docstrings and comments for all Python modules and functions in this project
+alwaysApply: true
+---
+
+# Python documentation (Writer)
+
+When adding or changing Python code under `src/`:
+
+- Every module must have a module-level docstring (purpose, main entry points).
+- Every public function must have a docstring with a one-line summary, `Args`, `Returns`, and `Raises` when applicable.
+- Private helpers (`_name`) must have at least a one-line docstring explaining behavior.
+- Non-obvious module constants should have an inline comment or live in a documented block.
+- Keep docstrings accurate when behavior changes.
+
+Prefer Google-style docstrings. Do not leave stub UI or placeholder handlers undocumented—note if they are stubs.
